@@ -1,0 +1,33 @@
+.nav-bar {
+  display: flex;
+  align-items: center;
+  /* Alinea verticalmente en el centro */
+  justify-content: space-between;
+  /* Espacia los elementos uniformemente */
+  padding: 0px 20px;
+  /* Añade algo de espacio alrededor del contenido */
+  margin: 0;
+
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  /*justify-content: center;
+    gap: 15px;*/
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo h1 {
+  margin: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
