@@ -1,0 +1,21 @@
+.item-image {
+    max-height: 200px; /* Ajusta la altura máxima de la imagen si es necesario */
+    object-fit: cover; /* Mantiene la relación de aspecto y cubre el contenedor */
+}
+
+/* Opcional: ajustar el tamaño del contenedor de la tarjeta */
+.card {
+    width: 100%; /* Asegura que la tarjeta ocupe todo el ancho del contenedor de columna */
+}
+
+.item-category, .item-description {
+    /* Limita el ancho del texto dentro de la tarjeta */
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+.item-description {
+    /* Establece un ancho máximo para la descripción */
+    max-width: 50%; /* Ajusta el valor según sea necesario */
+    margin: auto; /* Centra el texto horizontalmente dentro de la tarjeta */
+}
