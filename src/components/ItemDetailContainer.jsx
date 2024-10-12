@@ -1,19 +1,18 @@
 import { useEffect, useState } from "react"
+import { getProduct } from "../firebase/db"
 import { useParams } from "react-router-dom"
+import ItemDetail from "./ItemDetail"
 
 function ItemDetailContainer (){
     const [detail, setDetail] = useState(null)
     const { id } = useParams()
-    console.log(id)
 
     useEffect(() => {
-        fetch(`https://dummyjson.com/products/${id}`)
-            .then(res => res.json())
-            .then(res => setDetail(res))
+        getProduct(id, setDetail)
     },[id])
 
     return (
-        <div>{detail?.title}</div>
+        <ItemDetail detail={detail} />
         
     )
 }

@@ -12,12 +12,15 @@ function NavBar () {
                 </Link>
             </div>
             <ul className="nav-links">
-                <li><Link to="/beauty">Belleza</Link></li>
-                <li><Link to="/fragrances">Fragancias</Link></li>
-                <li><Link to="/furniture">Muebles</Link></li>
-                <li><Link to="/groceries">Comestibles</Link></li>
+                <li><Link to="/category/Cremas">Cremas</Link></li>
+                <li><Link to="/category/Fragancias">Fragancias</Link></li>
+                <li><Link to="/category/Bebes">Bebes</Link></li>
+                <li><Link to="/category/Esencias">Esencias</Link></li>
             </ul>
-            <CartWidget />
+            <Link to="/cart">
+                <CartWidget />
+            </Link>
+            
         </div>
     )
 }
